@@ -1,5 +1,6 @@
-//import propType from 'prop-types'
+import propType from 'prop-types'
 const TaskItem = ({ task, onDelete }) => (
+
 	<div className="display">
 		<li>
 			{task.name} - Due: {task.dueDate}
@@ -8,9 +9,9 @@ const TaskItem = ({ task, onDelete }) => (
 	</div>
 );
 
-// TaskItem.propType = {
-// 	task: propType,
-// 	onDelete: propType.func
+TaskItem.propType = {
+	task: propType.string,
+	onDelete: propType.func
+}
 
-// }
 export default TaskItem;

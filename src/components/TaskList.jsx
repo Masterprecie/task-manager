@@ -1,4 +1,5 @@
 import TaskItem from './TaskItem';
+import propType from 'prop-types'
 
 const TaskList = ({ tasks, onDelete }) => (
 	<ul>
@@ -7,5 +8,10 @@ const TaskList = ({ tasks, onDelete }) => (
 		))}
 	</ul>
 );
+
+TaskList.propType = {
+	tasks: propType.string,
+	onDelete: propType.func
+}
 
 export default TaskList;

@@ -1,7 +1,7 @@
 
 const EmptyState = () => {
 	return (
-		<div>
+		<div className="display">
 			<p>
 				No Task added yet
 			</p>

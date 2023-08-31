@@ -35,16 +35,13 @@ const AddTask = ({ onAdd }) => {
 					<button className='btn-add' type="submit">Add Task</button>
 				</form>
 			</div>
-
-
 		</div>
 
 	);
 };
 
 AddTask.propType = {
-	onAdd: propType.bool
-
+	onAdd: propType.func
 }
 
 export default AddTask;
