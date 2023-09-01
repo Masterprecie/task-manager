@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 
 const TaskList = ({ tasks, onDelete }) => (
 	<div style={{ margin: '0 20px' }}>
-		<ul>
+		<div>
 			{tasks.map(task => (
 				<TaskItem key={task.id} task={task} onDelete={onDelete} />
 			))}
-		</ul>
+		</div>
 	</div>
 );
 

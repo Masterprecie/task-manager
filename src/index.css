@@ -3,10 +3,7 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
+
 
 .display{
   border: 1px solid #ddd;
@@ -70,8 +67,8 @@ margin: 10px auto;
 text-align: center;
 width: 100%;
 }
-.display .task {
 
+.display .task {
 width: 100%;
 }
 
@@ -80,21 +77,22 @@ form {
 margin: 0 20px;
 display: flex;
 }
+
 @media (max-width:600px) {
   .display {
     flex-direction: column;
   }
+
   .display {
 width: 100%;
 }
-.display p {
-margin: 0 auto;
-width: 50%;
-}
+
+
 
 form {
 display: block;
 }
+
 .form>div {
 width: 100%;
 }

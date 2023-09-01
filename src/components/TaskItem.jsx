@@ -5,7 +5,7 @@ const TaskItem = ({ task, onDelete }) => (
 		<div className='task'>
 			<p> {task.name}
 				<span>
-					- Due: {task.dueDate}
+					-Due: {task.dueDate}
 				</span>
 			</p>
 
