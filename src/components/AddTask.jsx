@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import propType from 'prop-types'
+import PropTypes from 'prop-types'
 
 const AddTask = ({ onAdd }) => {
 	const [name, setName] = useState('');
@@ -32,7 +32,9 @@ const AddTask = ({ onAdd }) => {
 						onChange={e => setDueDate(e.target.value)}
 						style={{ padding: '9px', margin: '0 5px' }}
 					/>
-					<button className='btn-add' type="submit">Add Task</button>
+					<div className='btn-div'>
+						<button className='btn-add' type="submit">Add Task</button>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -40,8 +42,7 @@ const AddTask = ({ onAdd }) => {
 	);
 };
 
-AddTask.propType = {
-	onAdd: propType.func
-}
-
+AddTask.propTypes = {
+	onAdd: PropTypes.func.isRequired
+};
 export default AddTask;

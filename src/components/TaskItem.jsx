@@ -1,17 +1,28 @@
-import propType from 'prop-types'
+import PropTypes from 'prop-types'
 const TaskItem = ({ task, onDelete }) => (
 
 	<div className="display">
-		<li>
-			{task.name} - Due: {task.dueDate}
+		<div className='task'>
+			<p> {task.name}
+				<span>
+					- Due: {task.dueDate}
+				</span>
+			</p>
+
+		</div>
+		<div>
 			<button className="btn-del" onClick={() => onDelete(task.id)}>Delete</button>
-		</li>
+		</div>
+
 	</div>
 );
 
-TaskItem.propType = {
-	task: propType.string,
-	onDelete: propType.func
-}
-
+TaskItem.propTypes = {
+	task: PropTypes.shape({
+		id: PropTypes.number.isRequired,
+		name: PropTypes.string.isRequired,
+		dueDate: PropTypes.string.isRequired
+	}).isRequired,
+	onDelete: PropTypes.func.isRequired
+};
 export default TaskItem;

@@ -18,12 +18,14 @@ const App = () => {
     <div className='container'>
       <AddTask onAdd={addTask} />
 
+
       {tasks.length > 0 ? (
         <TaskList tasks={tasks} onDelete={deleteTask} />
       ) : (
         <EmptyState />
       )}
     </div>
+
   );
 };
 

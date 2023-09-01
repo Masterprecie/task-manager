@@ -1,10 +1,14 @@
-
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
 ul {
   list-style: none;
   padding: 0;
 }
 
-.display li {
+.display{
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px 0;
@@ -13,6 +17,7 @@ ul {
   align-items: center;
   background-color: antiquewhite;
   box-shadow: 1px 2px 2px #ccc;
+
 }
 
 .btn-del {
@@ -24,17 +29,21 @@ ul {
 }
 
 .container {
-width:100%
+width:100%;
+padding-top:40px;
 
 }
 
 .form {
 display: flex;
 justify-content: center;
+padding: 1rem 0rem;
 }
+
 
 .form h1 {
 text-align: center;
+padding: 1rem 0rem;
 }
 
 .form input {
@@ -52,9 +61,56 @@ color:white;
 
 .display {
 width: 50%;
-margin: 0 auto;
+display: flex;
+margin: 10px auto;
+
 }
 
 .display p {
 text-align: center;
+width: 100%;
+}
+.display .task {
+
+width: 100%;
+}
+
+
+form {
+margin: 0 20px;
+display: flex;
+}
+@media (max-width:600px) {
+  .display {
+    flex-direction: column;
+  }
+  .display {
+width: 100%;
+}
+.display p {
+margin: 0 auto;
+width: 50%;
+}
+
+form {
+display: block;
+}
+.form>div {
+width: 100%;
+}
+
+input {
+width: 100%;
+margin: 5px !important;
+
+}
+
+.btn-div {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+
+  
 }
